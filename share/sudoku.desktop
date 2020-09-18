@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sudoku
+Comment=A simple sudoku solver
+Exec=sudoku
+Icon=sudoku.png
+Terminal=false
+Type=Application
+Categories=Application;Game;
