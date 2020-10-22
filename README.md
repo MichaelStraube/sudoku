@@ -1,5 +1,5 @@
 # Sudoku
-A simple sudoku solver.
+Simple sudoku solver.
 
 <img src="share/screenshot.png" alt="sudoku" align="right" height="400">
 
