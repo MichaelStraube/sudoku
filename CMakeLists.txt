@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.11)
 
 project(sudoku LANGUAGES CXX)
 
@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O2")
 add_compile_options(-Wall -Wextra)
 
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 add_executable(sudoku
     src/main.cpp
@@ -22,7 +22,7 @@ add_executable(sudoku
     src/sudoku.h
 )
 
-target_link_libraries(sudoku PRIVATE Qt5::Widgets)
+target_link_libraries(sudoku PRIVATE Qt6::Widgets)
 
 install(TARGETS sudoku DESTINATION bin)
 install(FILES share/sudoku.desktop DESTINATION share/applications)

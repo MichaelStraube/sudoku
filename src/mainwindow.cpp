@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include <QMessageBox>
 #include <memory>
 #include "sudoku.h"
@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 	for (int i = 0; i < 81; i++) {
 		QLineEdit *edit = new QLineEdit(this);
-		edit->setValidator(new QRegExpValidator(QRegExp("[1-9]"), edit));
+		edit->setValidator(new QRegularExpressionValidator(QRegularExpression("[1-9]"), edit));
 		edit->setMaxLength(1);
 
 		if (i % 9 == 0) {
